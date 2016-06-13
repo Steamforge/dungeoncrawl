@@ -1,4 +1,4 @@
-var DM = (function () { 
+var DungeonCrawl = (function () { 
     'use strict';
 
     var resultElement;
@@ -15,6 +15,12 @@ var DM = (function () {
         20: { name: 'twenty', outter: 'hexagon', inner: 'triangle' }
     };
 
+    /**
+     * create the die element
+     * @param  {number} sides [description]
+     * @param  {number} num   [description]
+     * @return {element}       [description]
+     */
     var getDice = function (sides, num) {
         var newDiv;
         var innerDiv;
@@ -96,4 +102,4 @@ var DM = (function () {
     };
 })();
 
-DM.init();
+DungeonCrawl.init();

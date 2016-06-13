@@ -1,0 +1,24 @@
+{
+  "name": "dungeoncrawl",
+  "version": "1.0.0",
+  "description": "a test area for dungeon master tools",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "node-sass --include-path styles/scss styles/scss/main.scss styles/css/styles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Steamforge/dungeoncrawl.git"
+  },
+  "author": "Steamforge (josh studley)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Steamforge/dungeoncrawl/issues"
+  },
+  "homepage": "https://github.com/Steamforge/dungeoncrawl#readme",
+  "devDependencies": {
+    "node-sass": "^3.7.0",
+    "nodemon": "^1.9.2"
+  }
+}

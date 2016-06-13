@@ -3,10 +3,6 @@
 scss_files: './Styles/**/*.scss'
 
 exclude:
-  - './Styles/OOLess/bootstrap/*'
-  - './Styles/lib/*'
-  - './Styles/OOCss/**/*-sprite.scss'
-  - './Styles/less/components/_normalize.scss'
 
 linters:
   BorderZero:
@@ -20,15 +16,9 @@ linters:
 
   ColorVariable:
     enabled: true
-    exclude:
-      - './Styles/OOLess/**'
-      - './Styles/less/**'
 
   Comment:
     enabled: true
-    exclude:
-      - './Styles/OOLess/**'
-      - './Styles/less/**'
 
   DebugStatement:
     enabled: true
@@ -42,9 +32,6 @@ linters:
 
   EmptyLineBetweenBlocks:
     enabled: true
-    exclude:
-      - './Styles/OOLess/**'
-      - './Styles/less/**'
     ignore_single_line_blocks: true
 
   EmptyRule:
@@ -58,30 +45,18 @@ linters:
   ImportantRule:
     enabled: true
     severity: warning
-    exclude:
-      - './Styles/OOLess/**'
-      - './Styles/less/**'
 
   IdSelector:
     enabled: true
     severity: error
-    exclude:
-      - './Styles/OOLess/**'
-      - './Styles/less/**'
 
   HexLength:
     enabled: true
     style: long
-    exclude:
-      - './Styles/OOLess/**'
-      - './Styles/less/**'
 
   HexNotation:
     enabled: true
     style: lowercase
-    exclude:
-      - './Styles/OOLess/**'
-      - './Styles/less/**'
 
   HexValidation:
     enabled: true
@@ -104,16 +79,10 @@ linters:
   MergeableSelector:
     enabled: true
     force_nesting: true
-    exclude:
-      - './Styles/OOLess/**'
-      - './Styles/less/**'
 
   NameFormat:
     enabled: true
     convention: hyphenated_lowercase
-    exclude:
-      - './Styles/OOLess/**'
-      - './Styles/less/**'
 
   NestingDepth:
     enabled: true
@@ -121,17 +90,10 @@ linters:
 
   QualifyingElement:
     enabled: true
-    exclude:
-      - './Styles/OOLess/**'
-      - './Styles/less/**'
-
 
   SelectorFormat:
     enabled: true
     convention: hyphenated_lowercase
-    exclude:
-      - './Styles/OOLess/**'
-      - './Styles/less/**'
 
   SingleLinePerProperty:
     enabled: true
@@ -180,21 +142,8 @@ linters:
     enabled: true
     severity: error
 
-  # @todo: add font-size and font-family to this
-  VariableForProperty:
-    enabled: true
-    severity: error
-    properties:
-      - z-index
-    exclude:
-      - './Styles/OOLess/**'
-      - './Styles/less/**'
-
   VendorPrefix:
     enabled: true
-    exclude:
-      - './Styles/OOLess/**'
-      - './Styles/less/**'
 
   UnnecessaryMantissa:
     enabled: true
@@ -204,9 +153,6 @@ linters:
 
   UrlFormat:
     enabled: true
-    exclude:
-      - './Styles/OOLess/**'
-      - './Styles/less/**'
 
   UrlQuotes:
     enabled: true

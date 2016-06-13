@@ -1,0 +1,150 @@
+.dice-container {
+    position: relative;
+}
+
+.triangle {
+    -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.triangle2 {
+    -webkit-clip-path: polygon(50% 0%, 30% 100%, 100% 100%);
+    clip-path: polygon(50% 0%, 30% 100%, 100% 100%);
+}
+
+.hexagon {
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.rhombus {
+    -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.rhombus2 {
+    -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 75%, 0% 50%);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 75%, 0% 50%);
+}
+
+.pentagon {
+    -webkit-clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+}
+
+.decagon {
+    -webkit-clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+    clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+}
+
+.die {
+    display: block;
+    background-color: #f00;
+    height: 80px;
+    margin: 10px;
+    overflow: hidden;
+    width: 80px;
+
+    &::before {
+        background: -webkit-linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
+        background: -o-linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
+        background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#a6000000', GradientType=0);
+        content: '';
+        height: 80px;
+        width: 80px;
+        display: block;
+        position: absolute;
+    }
+
+    span {
+        color: #fff;
+        display: block;
+        font-family: arial;
+        height: 20px;
+        text-align: center;
+        width: 100%;
+    }
+
+}
+
+.innerPoly {
+    background-color: #f00;
+}
+
+.four {
+    .triangle2 {
+        height: 80px;
+        margin: 0 auto;
+        overflow: hidden;
+        width: 80px;
+    }
+
+    span {
+        height: 80px;
+        line-height: 100px;
+        margin: 0 auto;
+        width: 115%;
+    }
+
+}
+
+.six {
+    span {
+        line-height: 40px;
+        margin: 0 auto;
+    }
+
+    .rhombus {
+        height: 40px
+    }
+
+}
+
+.eight {
+    .triangle2 {
+        height: 40px;
+        margin: 0 auto;
+        overflow: hidden;
+        width: 80px;
+    }
+
+    span {
+        height: 40px;
+        line-height: 50px;
+        width: 115%;
+    }
+
+}
+
+.ten {
+    .rhombus2 {
+        height: 70px;
+        width: 50px;
+        margin: 0 auto;
+    }
+
+    span {
+        line-height: 60px;
+        margin: 0 auto;
+        height: 60px;
+    }
+
+}
+
+.twelve .pentagon,
+.twenty .triangle {
+    height: 40px;
+    margin: 15px auto;
+    overflow: hidden;
+    width: 50px;
+}
+
+.twelve,
+.twenty {
+    span {
+        line-height: 20px;
+        margin: 30% auto;
+    }
+
+}
